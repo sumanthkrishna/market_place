@@ -1,13 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<%= image_tag @product.image.url %><br>
+<div>
+ <h2><%= @product.title %></h2>
+</div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @product.title %>
-</p>
+<div style="width:60%">
+  <div style="float:left;border:1px solid #f3f3f3; padding-right:20px;">
+  <%= image_tag @product.image.url(:medium) %>
+  </div>
 
-<p>
+  <p>
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
@@ -16,6 +18,13 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
+  
+
+</div>
+
+
+
+
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
