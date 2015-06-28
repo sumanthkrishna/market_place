@@ -41,3 +41,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 # Feature to upload files/images
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+
+# Admin interface to manage the products
+gem 'activeadmin', github: 'activeadmin'
+
+# Support with user authentication feature
+gem 'devise'
